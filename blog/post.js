@@ -26,7 +26,10 @@
             // Renderizar con marked
             if (typeof marked !== 'undefined') {
                 marked.setOptions({ breaks: true });
-                container.innerHTML = marked.parse(content);
+                let html = marked.parse(content);
+                // Añadir referrerpolicy a imágenes (ayuda con Imgur/hotlinking)
+                html = html.replace(/<img /g, '<img referrerpolicy="no-referrer" ');
+                container.innerHTML = html;
             } else {
                 container.innerHTML = '<pre>' + content.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</pre>';
             }
