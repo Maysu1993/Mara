@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Maylen</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <div class="logo">
+            <img src="/assets/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>    
+                <li><a href="/">Home</a></li>
+                <li><a href="/proyectos/proyectos.html">Projects</a></li>
+                <li><a href="/blog/blog.html" class="activo">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="proyectos">
+            <div class="titulos">
+                <h1>Blog</h1>
+            </div>
+
+            <!-- FILTROS POR TAGS -->
+            <div class="filtros" id="filtros-blog">
+                <button class="filtro-btn activo-filtro" data-filter="all">All</button>
+            </div>
+
+            <!-- GRID DE BLOGS (misma estética que proyectos) -->
+            <div class="proyectos-grid" id="blogs-grid">
+                <!-- Se llenará dinámicamente con blog/blog-loader.js -->
+            </div>
+        </section>
+    </main>
+
+    <script src="../script.js"></script>
+    <script src="blog-loader.js"></script>
+</body>
+</html>

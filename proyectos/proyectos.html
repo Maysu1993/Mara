@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Maylen</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <div class="logo">
+            <img src="/assets/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>    
+                <li><a href="/ " >Home</a></li>
+                <li><a href="/proyectos/proyectos.html" class="activo">Projects</a></li>
+                <li><a href="/blog/blog.html" >Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="proyectos">
+        <div class="titulos">
+            <h1>Projects</h1>
+        </div>
+
+        <!-- FILTROS -->
+        <div class="filtros">
+            <button class="filtro-btn activo-filtro" data-filter="all">All</button>
+            <button class="filtro-btn" data-filter="cybersecurity">Cybersecurity</button>
+            <button class="filtro-btn" data-filter="web">Web</button>
+            <button class="filtro-btn" data-filter="backend">Backend</button>
+            <button class="filtro-btn" data-filter="data">Data</button>
+        </div>
+
+        <!-- GRID DE PROYECTOS -->
+        <div class="proyectos-grid">
+
+            <!-- ── PROYECTO 1: Cybersecurity Timeline ── -->
+            <article class="proyecto-card" data-category="cybersecurity">
+                <div class="card-preview">
+                    <img src="../assets/Ciberattack.png" alt="Cyberattack Timeline preview">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <span class="tag tag-cybersecurity">Cybersecurity</span>
+                    <h2 class="card-title">Cyberattack Timeline</h2>
+                    <p class="card-desc">Interactive timeline mapping the history of major cyberattacks, their vectors and global impact.</p>
+                    <div class="card-footer">
+                        <a href="https://psga.github.io/Cyberattack/" target="_blank" class="card-link primary">View project →</a>
+                        <a href="https://github.com/Maysu1993/Cyberattack" class="card-link secondary">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ── PROYECTO 2 (ejemplo Web) ── -->
+            <article class="proyecto-card" data-category="web">
+                <div class="card-preview">
+                    <div class="preview-placeholder">
+                        <span class="preview-icon">◈</span>
+                        <span class="preview-label">preview</span>
+                    </div>
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-info">
+                    <span class="tag tag-web">Web</span>
+                    <h2 class="card-title">Project Name</h2>
+                    <p class="card-desc">Short description of what this project does and the problem it solves.</p>
+                    <div class="card-footer">
+                        <a href="#" class="card-link primary">View project →</a>
+                        <a href="#" class="card-link secondary">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+    <script src="../script.js"></script>     
+</body>
+</html>
