@@ -31,7 +31,11 @@
 
     function getTagClass(tag) {
         const t = (tag || '').toLowerCase();
-        if (t.includes('ciber') || t.includes('red')) return 'tag-cybersecurity';
+        if (t === 'cybersecurity' || t.includes('ciber')) return 'tag-cybersecurity';
+        if (t === 'ctf') return 'tag-ctf';
+        if (t === 'networks' || t.includes('red')) return 'tag-networks';
+        if (t === 'university') return 'tag-university';
+        if (t === 'personal') return 'tag-personal';
         if (t.includes('sql') || t.includes('data')) return 'tag-data';
         if (t.includes('web')) return 'tag-web';
         return 'tag-backend';

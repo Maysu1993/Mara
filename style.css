@@ -192,7 +192,7 @@ h1 {
 
 }
 /* =====================================================
-   PROYECTOS — pega esto al final de tu style.css
+   PROYECTOS —
    ===================================================== */
 
 /* Filtros */
@@ -356,6 +356,30 @@ h1 {
     background: rgba(0, 255, 153, 0.08);
     color: #00ff99;
     border: 1px solid rgba(0, 255, 153, 0.2);
+}
+
+.tag-ctf {
+    background: rgba(255, 165, 0, 0.12);
+    color: #ffa94d;
+    border: 1px solid rgba(255, 165, 0, 0.25);
+}
+
+.tag-networks {
+    background: rgba(0, 150, 255, 0.1);
+    color: #4db8ff;
+    border: 1px solid rgba(0, 150, 255, 0.2);
+}
+
+.tag-university {
+    background: rgba(100, 100, 255, 0.12);
+    color: #a5b4fc;
+    border: 1px solid rgba(100, 100, 255, 0.25);
+}
+
+.tag-personal {
+    background: rgba(200, 150, 255, 0.12);
+    color: #e9d5ff;
+    border: 1px solid rgba(200, 150, 255, 0.25);
 }
 
 .card-title {
