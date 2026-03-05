@@ -8,7 +8,7 @@ image: "../assets/Ciberattack.png"
 # Modelos OSI
 Ya sea una conexión a una impresora local en el hogar o a un sitio web en otro país, para que se pueda producir cualquier comunicación de red se debe establecer antes una conexión a una red local. Una conexión física puede ser una conexión por cable o una conexión inalámbrica mediante ondas de radio.
 
-![Captura de pantalla 2025-05-07 a la(s) 10.54.15 a.m.](https://hackmd.io/_uploads/rJH4M-Ygll.png)
+![redes1](https://i.imgur.com/sMKYk5D.png)
 Estos son los componentes de un punto de acceso:
 
 1. Las antenas inalámbricas (Estas están integradas dentro de la versión del router que se muestra en la figura anterior).
@@ -34,13 +34,13 @@ Los estándares de la capa física se implementan en hardware, y los rigen diver
 Los componentes físicos son los dispositivos de hardware electrónico, medios y otros conectores que transmiten las señales que representan los bits. Todos los componentes de hardware, como NIC, interfaces y conectores, materiales y diseño de los cables, se especifican en los estándares asociados con la capa física.
 ### Codificación
 La codificación, o codificación de línea, es un método que se utiliza para convertir una transmisión de bits de datos en un “código” predefinido. Los códigos son grupos de bits utilizados para ofrecer un patrón predecible que pueda reconocer tanto el emisor como el receptor. 
-![Captura de pantalla 2025-05-07 a la(s) 11.08.30 a.m.](https://hackmd.io/_uploads/H1jYSbtgxe.png)
+![redes2](https://i.imgur.com/iYo6p4J.png)
 ### Señalización
 La capa física debe generar las señales inalámbricas, ópticas o eléctricas que representan los “1” y los “0” en los medios. La forma en que se representan los bits se denomina método de señalización. Los estándares de la capa física deben definir qué tipo de señal representa un “1” y qué tipo de señal representa un “0”. Esto puede ser tan simple como un cambio en el nivel de una señal eléctrica o de un pulso óptico. Por ejemplo, un pulso largo podría representar un 1 mientras que un pulso corto podría representar un 0.
 
 ### Ancho de banda
 Los diferentes medios físicos admiten la transferencia de bits a distintas velocidades. La transferencia de datos generalmente se discute en términos de ancho de banda. El ancho de banda es la capacidad a la que un medio puede transportar datos. El ancho de banda digital mide la cantidad de datos que pueden fluir desde un lugar hacia otro en un período de tiempo determinado. El ancho de banda generalmente se mide en kilobits por segundo (kbps), megabits por segundo (Mbps) o gigabits por segundo (Gbps).
-![Captura de pantalla 2025-05-07 a la(s) 11.16.19 a.m.](https://hackmd.io/_uploads/B1Wvwbtlll.png)
+![Captura de pantalla 2025-05-07 a la(s) 11.16.19 a.m.](https://imgur.com/zwrD8RW)
 
 ### Latencia
 El concepto de latencia se refiere a la cantidad de tiempo, incluidas las demoras, que les toma a los datos transferirse desde un punto determinado hasta otro.
