@@ -3,8 +3,8 @@
     "file": "Capa fisica - Modelo osi.md",
     "title": "Capa fisica - Modelo osi",
     "tags": [
-      "redes",
-      "sistemas"
+      "Networks",
+      "Systems"
     ],
     "date": "2026-03-02",
     "image": "https://i.ytimg.com/vi/xqox2pk8nJs/maxresdefault.jpg"
@@ -13,9 +13,9 @@
     "file": "Fortinet.md",
     "title": "Fortinet",
     "tags": [
-      "Ciber",
-      "sistemas",
-      "UN"
+      "Cybersecurity",
+      "Systems",
+      "University"
     ],
     "date": "2026-03-02",
     "image": "../assets/Ciberattack.png"
@@ -25,9 +25,19 @@
     "title": "Notas_SQL",
     "tags": [
       "SQL",
-      "sistemas"
+      "Systems"
     ],
     "date": "2026-03-02",
     "image": "../assets/Ciberattack.png"
+  },
+  {
+    "file": "mKingdom.md",
+    "title": "mKingdom",
+    "tags": [
+      "CTF",
+      "Cybersecurity"
+    ],
+    "date": "2024-10-27",
+    "image": "../assets/CTFmKingdom.png"
   }
 ]
