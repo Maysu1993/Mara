@@ -4,10 +4,24 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #0f0f0f;
     color: #e0e0e0;
     font-family: "Sora", sans-serif;
+    overflow-x: hidden;
+}
+
+/* Modo lectura limpia (sin partículas, fondo negro sólido) */
+body.lectura-limpia {
+    background-color: #000000;
+}
+
+body.lectura-limpia #particles-js {
+    display: none !important;
 }
 
 header {
@@ -434,17 +448,204 @@ h1 {
     display: none;
 }
 
-/* Responsive */
-@media (max-width: 640px) {
+/* =============================================== Responsive (todo el sitio) ============================================ */
+
+/* Tablet y pantallas medianas */
+@media (max-width: 768px) {
+    header {
+        padding: 14px 20px;
+    }
+
+    .logo img {
+        width: 38px;
+        height: 38px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    nav ul a {
+        font-size: 0.95rem;
+    }
+
+    #home {
+        flex-direction: column;
+        padding: 0 24px 40px;
+        gap: 32px;
+        min-height: auto;
+        padding-top: 80px;
+    }
+
+    .presentacion {
+        max-width: 100%;
+        order: 1;
+    }
+
+    .presentacion h1 {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+    }
+
+    .presentacion h2 {
+        font-size: 1rem;
+    }
+
+    .boton {
+        margin-top: 28px;
+    }
+
+    .foto {
+        order: 2;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .foto img {
+        height: auto;
+        max-height: 60vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h1 {
+        margin-top: 80px;
+        font-size: 1.8rem;
+    }
+
+    .filtros {
+        margin: 24px 16px 32px;
+        gap: 8px;
+    }
+
+    .filtro-btn {
+        padding: 10px 18px;
+        font-size: 0.8rem;
+        min-height: 44px;
+    }
+
+    .proyectos-grid {
+        padding: 0 20px 60px;
+        max-width: 100%;
+    }
+
     .proyecto-card {
         grid-template-columns: 1fr;
+    }
+
+    .card-preview {
+        min-height: 180px;
+    }
+
+    .card-info {
+        padding: 20px 24px;
+    }
+
+    .card-footer {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .card-link {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    footer {
+        padding: 16px 20px;
+        font-size: 0.75rem;
+    }
+}
+
+/* Móvil pequeño */
+@media (max-width: 480px) {
+    header {
+        padding: 12px 16px;
+    }
+
+    .logo img {
+        width: 34px;
+        height: 34px;
+    }
+
+    nav ul {
+        gap: 14px;
+    }
+
+    nav ul a {
+        font-size: 0.88rem;
+    }
+
+    #home {
+        padding: 0 16px 32px;
+        padding-top: 72px;
+        gap: 24px;
+    }
+
+    .presentacion h1 {
+        font-size: 1.75rem;
+    }
+
+    .redes {
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .redes a {
+        font-size: 22px;
+        min-width: 44px;
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-btn {
+        min-height: 44px;
+        padding: 8px 0;
+    }
+
+    .boton {
+        margin-top: 20px;
+        padding: 14px 24px;
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-top: 72px;
+        font-size: 1.6rem;
+    }
+
+    .filtros {
+        margin: 20px 12px 24px;
+    }
+
+    .filtro-btn {
+        padding: 10px 14px;
+        font-size: 0.78rem;
+    }
+
+    .proyectos-grid {
+        padding: 0 16px 48px;
     }
 
     .card-preview {
         min-height: 160px;
     }
 
-    .proyectos-grid {
-        padding: 0 20px 60px;
+    .card-info {
+        padding: 18px 20px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-desc {
+        font-size: 0.85rem;
     }
 }
