@@ -1,36 +1,5 @@
 [
   {
-    "file": "Capa fisica - Modelo osi.md",
-    "title": "Capa fisica - Modelo osi",
-    "tags": [
-      "Networks",
-      "Systems"
-    ],
-    "date": "2026-03-02",
-    "image": "https://i.ytimg.com/vi/xqox2pk8nJs/maxresdefault.jpg"
-  },
-  {
-    "file": "Fortinet.md",
-    "title": "Fortinet",
-    "tags": [
-      "Cybersecurity",
-      "Systems",
-      "University"
-    ],
-    "date": "2026-03-02",
-    "image": "../assets/Ciberattack.png"
-  },
-  {
-    "file": "Notas_SQL.md",
-    "title": "Notas_SQL",
-    "tags": [
-      "SQL",
-      "Systems"
-    ],
-    "date": "2026-03-02",
-    "image": "../assets/Ciberattack.png"
-  },
-  {
     "file": "mKingdom.md",
     "title": "mKingdom",
     "tags": [
@@ -39,5 +8,18 @@
     ],
     "date": "2024-10-27",
     "image": "../assets/mKingdom.png"
+  },
+ 
+  {
+    "file": "Fortinet.md",
+    "title": "Fortinet: Fundamentos de Ciberseguridad",
+    "tags": [
+      "Cybersecurity",
+      "Systems",
+      "University"
+    ],
+    "date": "2026-03-02",
+    "image": "../assets/fortinet.png"
   }
+ 
 ]

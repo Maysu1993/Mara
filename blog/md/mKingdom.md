@@ -2,7 +2,7 @@
 title: mKingdom
 tags: [CTF, Cibersecurity]
 date: 2024-10-27
-image: "../assets/CTFmKingdom.png"
+image: "../assets/mKingdom.png"
 ---
 
 # CTF — mKingdom 

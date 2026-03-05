@@ -166,12 +166,19 @@
     position: sticky;
     top: 110px;
     align-self: flex-start;
-    padding-right: 16px;
     flex: 0 0 230px;
-    background: #000000;
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
     padding-left: 10px;
+    padding-right: 16px;
+    background: #000000; 
+    scrollbar-width: none;         
+    -ms-overflow-style: none;      
 }
 
+.post-toc::-webkit-scrollbar {
+    display: none;                  
+}
 .post-toc::before {
     content: '';
     position: absolute;
@@ -272,9 +279,9 @@
 }
 
 /* En modo lectura, el header no debe ser fixed para no estorbar */
-body.lectura-limpia header {
+/* body.lectura-limpia header {
     position: static;
-}
+} */
 
 /* Ocultar completamente la ToC en móviles: solo texto + fondo negro limpio */
 @media (max-width: 768px) {
