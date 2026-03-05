@@ -16,6 +16,11 @@
         <div class="logo">
             <img src="/assets/logo.png" alt="Logo">
         </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav>
             <ul>    
                 <li><a href="/">Home</a></li>
@@ -26,11 +31,21 @@
     </header>
 
     <main>
-        <section class="post-container">
-            <a href="blog.html" class="back-link">← Volver al blog</a>
-            <article id="post-content" class="post-article">
-                <div class="post-loading">Cargando...</div>
-            </article>
+        <section class="post-layout">
+            <aside class="post-toc">
+                <h2 class="toc-title">Contenido</h2>
+                <nav>
+                    <ul id="toc-list" class="toc-list"></ul>
+                </nav>
+            </aside>
+
+            <section class="post-container">
+                <button type="button" class="toc-toggle-mobile">Contenido</button>
+                <a href="blog.html" class="back-link">← Volver al blog</a>
+                <article id="post-content" class="post-article">
+                    <div class="post-loading">Cargando...</div>
+                </article>
+            </section>
         </section>
     </main>
 

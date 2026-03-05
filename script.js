@@ -53,7 +53,6 @@ if (aboutBtn) {
  
 // FILTROS DE PROYECTOS 
 
-
 const filtros = document.querySelectorAll('.filtro-btn');
 const cards   = document.querySelectorAll('.proyecto-card');
 
@@ -71,3 +70,20 @@ filtros.forEach(btn => {
         });
     });
 });
+
+// Menú hamburguesa para navegación en móvil
+const navToggle = document.querySelector('.nav-toggle');
+const headerEl = document.querySelector('header');
+
+if (navToggle && headerEl) {
+    navToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+    });
+
+    // Cerrar menú al hacer click en cualquier enlace de navegación
+    headerEl.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.body.classList.remove('nav-open');
+        });
+    });
+}
