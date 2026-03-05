@@ -32,8 +32,41 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 100;
-   
+    z-index: 1000;
+}
+
+/* Botón de menú (hamburguesa) para móvil */
+.nav-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin-left: 16px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #e0e0e0;
+    border-radius: 999px;
+    margin: 4px 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+body.nav-open .nav-toggle span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+body.nav-open .nav-toggle span:nth-child(2) {
+    opacity: 0;
+}
+
+body.nav-open .nav-toggle span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
 }
 
 .logo img {
@@ -461,8 +494,29 @@ h1 {
         height: 38px;
     }
 
+    /* Menú hamburguesa visible en pantallas pequeñas */
+    .nav-toggle {
+        display: inline-block;
+    }
+
+    header nav {
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        background: #000000;
+        padding: 12px 18px 14px;
+        border-radius: 10px;
+        box-shadow: 0 18px 40px rgba(0,0,0,0.85);
+        display: none;
+    }
+
+    body.nav-open header nav {
+        display: block;
+    }
+
     nav ul {
-        gap: 18px;
+        flex-direction: column;
+        gap: 10px;
     }
 
     nav ul a {

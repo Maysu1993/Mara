@@ -271,6 +271,29 @@
     font-size: 0.7rem;
 }
 
+/* En modo lectura, el header no debe ser fixed para no estorbar */
+body.lectura-limpia header {
+    position: static;
+}
+
+/* Ocultar completamente la ToC en móviles: solo texto + fondo negro limpio */
+@media (max-width: 768px) {
+    .post-toc,
+    .toc-toggle-mobile {
+        display: none !important;
+    }
+
+    .post-layout {
+        max-width: 100%;
+        padding: 96px 16px 40px;
+    }
+
+    .post-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
 /* Responsive: tablet */
 @media (max-width: 900px) {
     .post-layout {
