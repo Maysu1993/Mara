@@ -122,6 +122,9 @@ h2 {
     margin-bottom: 25px;
     font-weight: 400;
     font-size: 1.2rem;
+    height: 2rem;       
+    min-height: 1.8rem;   
+    width: 100%;  
 }
 
 .presentacion p {
@@ -712,4 +715,16 @@ body {
 header.header-transparente {
     background-color: transparent;
     transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    h2 {
+        min-height: 3.6rem;  
+        width: 100%;
+    }
+    
+    .presentacion {
+        width: 100%;
+        max-width: 100%;    
+    }
 }
