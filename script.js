@@ -87,3 +87,12 @@ if (navToggle && headerEl) {
         });
     });
 }
+// Header transparente en home, proyectos y blog
+const path = window.location.pathname;
+const header = document.querySelector('header');
+
+const paginasTransparentes = ['/', '/index.html', '/proyectos/proyectos.html', '/blog/blog.html'];
+
+if (paginasTransparentes.includes(path)) {
+    header.classList.add('header-transparente');
+}
