@@ -41,7 +41,17 @@
 
             <section class="post-container">
                 <button type="button" class="toc-toggle-mobile">Contenido</button>
-                <a href="blog.html" class="back-link">← Volver al blog</a>
+                <a id="back-link" href="blog.html" class="back-link">← Volver al blog</a>
+                <script>
+                    (function() {
+                        const params = new URLSearchParams(window.location.search);
+                        if (params.get('from') === 'proyectos') {
+                            const link = document.getElementById('back-link');
+                            link.href = '../proyectos/proyectos.html';
+                            link.textContent = '← Volver a proyectos';
+                        }
+                    })();
+                </script>
                 <article id="post-content" class="post-article">
                     <div class="post-loading">Cargando...</div>
                 </article>
